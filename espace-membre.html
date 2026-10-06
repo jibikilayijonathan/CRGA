@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon espace membre — CRGA Grand Amiénois</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body data-page="espace-membre">
+<!-- Données de démonstration : à remplacer par les données réelles du membre connecté (back-end). -->
+<main class="site-main">
+  <div class="section section--ice" style="padding-top:2.5rem">
+    <div class="glow glow--cyan" style="width:24rem;height:24rem;top:-10rem;right:-10rem"></div>
+    <div class="container z1 stack-xl">
+
+      <!-- BANDEAU D'ACCUEIL -->
+      <section class="card card--navy card--shadow-xl">
+        <div style="position:absolute;inset:0 0 0 auto;width:33%;background:linear-gradient(to left,rgba(0,43,102,.6),transparent);pointer-events:none"></div>
+        <div class="row row--between row--wrap row--lg z1">
+          <div class="stack-xs">
+            <div class="row row--wrap">
+              <span class="pill pill--cyan-soft pill--sm"><span class="dot dot--vivid pulse" style="width:6px;height:6px"></span>Console repreneur</span>
+              <span class="pill pill--sm pill--plain" style="background:rgba(255,255,255,.1);color:#fff"><span class="ms ms--14 c-amber">verified</span>Membre actif — Thomas Vasseur (repreneur)</span>
+              <span class="t-sm c-on-navy-3">ID : CRGA-80-TV94</span>
+            </div>
+            <h1 class="t-h1">Bienvenue sur votre espace CRGA, Thomas</h1>
+            <span class="row t-sm c-on-navy-2"><span class="ms ms--16 c-cyan">verified_user</span>Adhésion 2026 active — validée par le bureau collégial le 14/02/2026</span>
+          </div>
+          <div class="row row--wrap">
+            <button class="btn btn--amber" type="button" data-open-modal="sos-modal"><span class="dot dot--error ping"></span><span class="ms ms--18">warning</span>Signalement d'urgence Fiche 15</button>
+            <a class="btn btn--navy-surface btn--sm c-cyan" href="fiche-15.html"><span class="ms">contact_support</span>Protocole d'escalade</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- KPI -->
+      <section class="grid grid-sm-2 grid-lg-4 grid--md" aria-label="Indicateurs">
+        <div class="card card--hover card--fill">
+          <div class="row row--between row--top"><span class="eyebrow c-muted">Sourcing Picardie</span><span class="icon-box icon-box--sq icon-box--sm c-cyan"><span class="ms">radar</span></span></div>
+          <div class="mt-md">
+            <div class="t-price">12</div>
+            <div class="t-h3 mt-xs">Dossiers cibles consultés</div>
+            <div class="row label-md c-secondary mt-xs"><span class="ms ms--16">trending_up</span>+3 nouveaux cette semaine</div>
+          </div>
+          <svg class="sparkline mt-md" viewBox="0 0 160 32" fill="none" aria-hidden="true">
+            <path d="M0 24 L25 18 L50 26 L80 12 L110 16 L135 6 L160 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M0 24 L25 18 L50 26 L80 12 L110 16 L135 6 L160 10 V32 H0 Z" fill="currentColor" fill-opacity=".08"/>
+          </svg>
+        </div>
+        <div class="card card--hover card--fill">
+          <div class="row row--between row--top"><span class="eyebrow c-muted">Rencontres cédants</span><span class="icon-box icon-box--sq icon-box--sm"><span class="ms">groups</span></span></div>
+          <div class="mt-md">
+            <div class="t-price">2</div>
+            <div class="t-h3 mt-xs">Mes speed-matchings</div>
+            <div class="row t-sm c-muted mt-xs"><span class="ms ms--16 c-amber">event_available</span>Prochain : 18 juin 2026 à Amiens</div>
+          </div>
+          <div class="row row--between eyebrow c-secondary mt-md" style="text-transform:none"><span>Quota annuel : 2/4 sessions</span><span class="pill pill--secondary pill--sm pill--sq pill--plain">Confirmé</span></div>
+        </div>
+        <div class="card card--hover card--fill">
+          <div class="row row--between row--top"><span class="eyebrow c-muted">Discussions actives</span><span class="icon-box icon-box--sq icon-box--sm c-cyan"><span class="ms">handshake</span></span></div>
+          <div class="mt-md">
+            <div class="t-price">1</div>
+            <div class="t-h3 mt-xs">Mise en relation directe</div>
+            <div class="row t-sm c-muted mt-xs"><span class="dot dot--cyan"></span>1 cédant en contact confidentiel (NDA signé)</div>
+          </div>
+          <div class="row row--between eyebrow c-muted mt-md" style="text-transform:none"><span>Étape : LOI en rédaction</span><span class="c-cyan">J-14 avant revue</span></div>
+        </div>
+        <div class="card card--hover card--fill">
+          <div class="row row--between row--top"><span class="eyebrow c-muted">Conformité déontologique</span><span class="icon-box icon-box--sq icon-box--sm c-navy"><span class="ms">gavel</span></span></div>
+          <div class="mt-md">
+            <div class="t-price">0</div>
+            <div class="t-h3 mt-xs">Cellule d'arbitrage</div>
+            <div class="row t-sm c-muted mt-xs"><span class="dot dot--success"></span>0 litige en cours</div>
+          </div>
+          <div class="row row--between eyebrow c-muted mt-md" style="text-transform:none"><span>Charte CRGA signée</span><span class="pill pill--grey pill--sm pill--sq pill--plain">À jour</span></div>
+        </div>
+      </section>
+
+      <!-- CONTENU PRINCIPAL -->
+      <section class="grid grid-xl-12 grid--xl items-start">
+        <div class="xl-span-8 stack-xl">
+
+          <!-- Opportunités -->
+          <div class="card card--pad-0">
+            <div class="row row--between row--wrap row--md" style="padding:1.5rem;background:var(--low)">
+              <div>
+                <div class="row"><span class="ms c-secondary">table_rows</span><h2 class="t-h2 c-navy">Opportunités &amp; cessions en veille</h2></div>
+                <p class="t-sm c-muted">Dossiers anonymisés, validés par le collège d'experts du Grand Amiénois</p>
+              </div>
+              <div class="row">
+                <span class="pill pill--grey pill--sq pill--plain" style="background:var(--highest);color:var(--text)"><span class="dot dot--cyan" style="width:6px;height:6px"></span>Veille active Somme (80)</span>
+                <button class="icon-box icon-box--sm icon-box--sq" style="background:var(--container);color:var(--text)" type="button" aria-label="Rafraîchir" onclick="CRGA.toast('Flux à jour.', 'refresh')"><span class="ms ms--18">refresh</span></button>
+              </div>
+            </div>
+            <div class="row row--wrap" style="padding:.75rem 1.5rem" data-chips>
+              <span class="eyebrow c-muted">Filtres rapides :</span>
+              <button class="chip is-active" type="button">Tous secteurs</button>
+              <button class="chip" type="button">CA : 1 M€ – 5 M€</button>
+              <button class="chip" type="button">Effectif : 10 à 49 sal.</button>
+              <button class="chip" type="button">Bassin : Grand Amiénois</button>
+              <span class="t-sm c-muted" style="margin-left:auto">3 opportunités affichées</span>
+            </div>
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr><th>Référence &amp; branche</th><th>Chiffre d'affaires</th><th>Équipe</th><th>Bassin</th><th>Audit CRGA</th><th class="ta-right">Action</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><div class="t-h3 c-navy">Réf. 80-IND-2026-04</div><div class="c-muted">Chaudronnerie industrielle &amp; usinage CNC</div></td>
+                    <td><strong>2,40 M€</strong> <span class="c-muted">/ EBE 340 k€</span></td>
+                    <td><span class="row"><span class="ms ms--16 c-secondary">badge</span>18 salariés</span></td>
+                    <td>Albert / Pays du Coquelicot</td>
+                    <td><span class="pill pill--success pill--sm"><span class="ms ms--14">check_circle</span>Conforme</span></td>
+                    <td class="ta-right"><button class="btn btn--navy btn--sm c-cyan" type="button">Consulter<span class="ms">arrow_forward</span></button></td>
+                  </tr>
+                  <tr>
+                    <td><div class="t-h3 c-navy">Réf. 80-BTP-2026-11</div><div class="c-muted">Génie climatique &amp; électrotechnique tertiaire</div></td>
+                    <td><strong>3,85 M€</strong> <span class="c-muted">/ EBE 410 k€</span></td>
+                    <td><span class="row"><span class="ms ms--16 c-secondary">badge</span>24 salariés</span></td>
+                    <td>Amiens Métropole (Pôle Jules Verne)</td>
+                    <td><span class="pill pill--success pill--sm"><span class="ms ms--14">check_circle</span>Conforme</span></td>
+                    <td class="ta-right"><button class="btn btn--navy btn--sm c-cyan" type="button">Consulter<span class="ms">arrow_forward</span></button></td>
+                  </tr>
+                  <tr>
+                    <td><div class="t-h3 c-navy">Réf. 80-SER-2026-09</div><div class="c-muted">Transport spécialisé &amp; logistique agro</div></td>
+                    <td><strong>1,75 M€</strong> <span class="c-muted">/ EBE 195 k€</span></td>
+                    <td><span class="row"><span class="ms ms--16 c-secondary">badge</span>12 salariés</span></td>
+                    <td>Montdidier / Santerre</td>
+                    <td><span class="pill pill--warn pill--sm"><span class="ms ms--14">schedule</span>Revue finale</span></td>
+                    <td class="ta-right"><button class="btn btn--navy btn--sm c-cyan" type="button">Consulter<span class="ms">arrow_forward</span></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row row--between row--wrap" style="padding:1rem 1.5rem;background:var(--low)">
+              <span class="t-sm c-muted">Affichage confidentiel réservé aux membres à jour. Ne pas diffuser sans accord écrit du CRGA.</span>
+              <a class="link" href="#">Voir l'ensemble du portefeuille (47 cessions)<span class="ms ms--16">chevron_right</span></a>
+            </div>
+          </div>
+
+          <!-- Parcours -->
+          <div class="card stack-lg">
+            <div class="row row--between row--wrap">
+              <div>
+                <span class="eyebrow c-cyan">Feuille de route</span>
+                <h2 class="t-h2 c-navy">Mon parcours d'accompagnement</h2>
+              </div>
+              <span class="pill pill--ice pill--lg pill--plain label-md">Étape 3 sur 4 en cours</span>
+            </div>
+            <ol class="grid grid-md-2 grid-lg-4 grid--md" style="list-style:none;padding:0;margin:0">
+              <li class="card card--ice card--pad-md card--fill">
+                <div class="row row--between mb-md" style="margin-bottom:.5rem"><span class="num-badge num-badge--xs num-badge--deep">01</span><span class="ms c-success">check_circle</span></div>
+                <div><h3 class="t-h3 c-navy">Auto-diagnostic</h3><p class="t-sm c-muted">Scoring des compétences validé par la commission.</p></div>
+                <span class="eyebrow mt-md" style="color:#047857">Validé le 12/01/2026</span>
+              </li>
+              <li class="card card--ice card--pad-md card--fill">
+                <div class="row row--between" style="margin-bottom:.5rem"><span class="num-badge num-badge--xs num-badge--deep">02</span><span class="ms c-success">check_circle</span></div>
+                <div><h3 class="t-h3 c-navy">Entretien sas CRGA</h3><p class="t-sm c-muted">Audition devant le collège bénévole &amp; parrainage attribué.</p></div>
+                <span class="eyebrow mt-md" style="color:#047857">Complété le 14/02/2026</span>
+              </li>
+              <li class="card card--navy card--pad-md card--fill card--shadow-lg" aria-current="step">
+                <div style="position:absolute;top:0;right:0;width:4rem;height:4rem;background:rgba(0,180,216,.2);border-bottom-left-radius:100%"></div>
+                <div class="row row--between z1" style="margin-bottom:.5rem"><span class="num-badge num-badge--xs num-badge--cyan">03</span><span class="pill pill--amber pill--sm pill--sq pulse">En cours</span></div>
+                <div class="z1"><h3 class="t-h3">Recherche de financement</h3><p class="t-sm c-on-navy-2">Montage dette senior Bpifrance &amp; fonds Hauts-de-France.</p></div>
+                <span class="eyebrow mt-md c-cyan z1">Audition Bpifrance J-8</span>
+              </li>
+              <li class="card card--pad-md card--fill" style="background:var(--container);box-shadow:none;opacity:.8">
+                <div class="row row--between" style="margin-bottom:.5rem"><span class="num-badge num-badge--xs num-badge--grey">04</span><span class="ms c-muted">lock</span></div>
+                <div><h3 class="t-h3">Closing &amp; post-reprise</h3><p class="t-sm c-muted">Accompagnement des 100 premiers jours et comité de parrainage.</p></div>
+                <span class="eyebrow mt-md c-muted">Phase future</span>
+              </li>
+            </ol>
+            <div class="bar bar--sm" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Progression du parcours"><div class="bar__fill" style="width:60%"></div></div>
+            <div class="row row--between row--wrap t-sm c-muted">
+              <span class="row"><span class="ms ms--18 c-secondary">info</span>Prochaine étape : validation de l'apport avec le comité d'engagement bancaire.</span>
+              <a class="link" href="#">Consulter ma grille d'audit<span class="ms ms--16">arrow_forward</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLONNE LATÉRALE -->
+        <aside class="xl-span-4 stack-xl">
+          <div class="card stack-md">
+            <div class="row row--between"><span class="eyebrow c-secondary">Accompagnement pair-à-pair</span><span class="pill pill--success pill--sm pill--sq pill--plain">Assigné</span></div>
+            <h2 class="t-h2 c-navy">Mon parrain référent</h2>
+            <div class="row row--md card card--ice card--pad-md">
+              <span class="avatar avatar--lg">LL</span>
+              <div class="grow">
+                <div class="t-h3 c-navy">Léon Loppy</div>
+                <div class="t-sm c-muted">Co-fondateur du CRGA</div>
+                <div class="row label-md c-secondary mt-xs"><span class="ms ms--14">history_edu</span>Repreneur de L'Annexe Club</div>
+              </div>
+            </div>
+            <p class="t-sm c-muted">Votre parrain intervient bénévolement au titre de la charte du CRGA. Il vous conseille sans conflit d'intérêts dans vos négociations.</p>
+            <div class="stack-sm">
+              <button class="btn btn--cyan btn--block" type="button" onclick="CRGA.toast('Demande de rendez-vous transmise. Réponse sous 24 h ouvrées.', 'call')"><span class="ms ms--18">call</span>Prendre rendez-vous téléphonique</button>
+              <button class="btn btn--soft btn--block btn--sm" type="button" onclick="CRGA.toast('Messagerie confidentielle : bientôt disponible.', 'mail')"><span class="ms">mail</span>Envoyer une note confidentielle</button>
+            </div>
+          </div>
+
+          <div class="card stack-md">
+            <div class="row row--between"><span class="eyebrow c-secondary">Cycles &amp; événements</span><a class="link link--cyan" href="agenda.html#agenda">Tout voir</a></div>
+            <h2 class="t-h2 c-navy">Prochains ateliers</h2>
+            <div class="stack-sm">
+              <div class="card card--ice card--pad-md row row--between row--top">
+                <div class="row row--top">
+                  <span class="mini-date mini-date--navy"><small>Juin</small><strong>18</strong></span>
+                  <div><h3 class="t-h3 c-navy">Speed-matching cédants</h3><span class="t-sm c-muted">09h00 – 13h00 • CCI Amiens</span><span class="eyebrow c-amber" style="display:block;text-transform:none;margin-top:.25rem">Badge repreneur réservé</span></div>
+                </div>
+                <span class="btn btn--success btn--sm" style="cursor:default">Inscrit</span>
+              </div>
+              <div class="card card--ice card--pad-md row row--between row--top">
+                <div class="row row--top">
+                  <span class="mini-date"><small>Juil</small><strong>02</strong></span>
+                  <div><h3 class="t-h3 c-navy">Atelier : due diligence RH</h3><span class="t-sm c-muted">18h30 – 20h30 • Palais consulaire</span></div>
+                </div>
+                <button class="btn btn--navy btn--sm c-cyan" type="button" onclick="this.outerHTML='<span class=&quot;btn btn--success btn--sm&quot;>Inscrit</span>';CRGA.toast('Inscription confirmée.')">Participer</button>
+              </div>
+              <div class="card card--ice card--pad-md row row--between row--top">
+                <div class="row row--top">
+                  <span class="mini-date"><small>Sep</small><strong>15</strong></span>
+                  <div><h3 class="t-h3 c-navy">Pétanque &amp; réseau CRGA</h3><span class="t-sm c-muted">19h00 • Parc Saint-Pierre, Amiens</span></div>
+                </div>
+                <button class="btn btn--navy btn--sm c-cyan" type="button" onclick="this.outerHTML='<span class=&quot;btn btn--success btn--sm&quot;>Inscrit</span>';CRGA.toast('Inscription confirmée.')">Participer</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card stack-md">
+            <div class="row row--between"><span class="eyebrow c-secondary">Boîte à outils</span><span class="ms c-secondary">folder_special</span></div>
+            <h2 class="t-h2 c-navy">Téléchargements réservés</h2>
+            <div class="stack-xs">
+              <a class="dl-item" href="#">
+                <span class="row"><span class="file-ico file-ico--pdf">PDF</span><span><span class="dl-item__title" style="display:block">Fiche 15 complète &amp; protocole SOS</span><span class="t-sm c-muted">v2026.2 • 2,4 Mo</span></span></span>
+                <span class="ms">download</span>
+              </a>
+              <a class="dl-item" href="#">
+                <span class="row"><span class="file-ico file-ico--xls">XLS</span><span><span class="dl-item__title" style="display:block">Trame d'audit &amp; scoring reprise</span><span class="t-sm c-muted">Matrice CRGA • 1,1 Mo</span></span></span>
+                <span class="ms">download</span>
+              </a>
+              <a class="dl-item" href="#">
+                <span class="row"><span class="file-ico file-ico--doc">DOC</span><span><span class="dl-item__title" style="display:block">Modèle de lettre d'intention (LOI)</span><span class="t-sm c-muted">Modèle type • 850 Ko</span></span></span>
+                <span class="ms">download</span>
+              </a>
+            </div>
+            <div class="row eyebrow c-secondary" style="text-transform:none;background:var(--ice);padding:.5rem;border-radius:var(--r-sm)"><span class="ms ms--16">verified</span>Documents confidentiels réservés aux membres.</div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- PERMANENCE -->
+      <section class="card row row--between row--wrap row--lg">
+        <div class="row row--md">
+          <span class="icon-box icon-box--md"><span class="ms ms--24">hub</span></span>
+          <div>
+            <h2 class="t-h3 c-navy">Permanence juridique &amp; bancaire du Grand Amiénois</h2>
+            <p class="t-sm c-muted">Une question sur un montage LBO ou un pacte d'actionnaires ? Les experts partenaires reçoivent sans frais le 1<sup>er</sup> vendredi du mois.</p>
+          </div>
+        </div>
+        <button class="btn btn--navy-surface c-cyan" type="button" onclick="CRGA.toast('Demande de créneau envoyée.', 'calendar_month')"><span class="ms ms--18">calendar_month</span>Réserver un créneau</button>
+      </section>
+    </div>
+  </div>
+
+  <!-- MODALE SOS FICHE 15 -->
+  <div class="modal" id="sos-modal" role="dialog" aria-modal="true" aria-labelledby="sos-modal-title">
+    <div class="modal__dialog">
+      <div class="row row--between">
+        <h2 class="row t-h3 c-error" id="sos-modal-title"><span class="ms">e911_emergency</span>Cellule d'urgence Fiche 15</h2>
+        <button type="button" class="c-muted" data-close-modal aria-label="Fermer"><span class="ms">close</span></button>
+      </div>
+      <p class="t-sm c-muted mt-sm">Ce dispositif active le collège de crise du CRGA (experts-comptables, avocats d'affaires et anciens dirigeants) en cas de blocage critique : rupture brutale de négociation, découverte de passif occulte ou menace d'assignation au tribunal de commerce.</p>
+      <form class="form mt-md" style="gap:.75rem" data-form data-toast="Signalement transmis au CRGA. Un référent vous contacte rapidement." data-reset>
+        <div class="field">
+          <label class="field__label" for="sos-ref">Cible concernée / référence dossier</label>
+          <input class="input" id="sos-ref" value="Réf. 80-IND-2026-04" required>
+        </div>
+        <div class="field">
+          <label class="field__label" for="sos-nature">Nature de l'urgence</label>
+          <select class="select" id="sos-nature">
+            <option>Blocage du protocole de cession / revirement du cédant</option>
+            <option>Alerte trésorerie / dettes fiscales non déclarées</option>
+            <option>Refus soudain de garantie bancaire</option>
+            <option>Autre motif confidentiel majeur</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="sos-details">Précisions (280 caractères max)</label>
+          <textarea class="textarea" id="sos-details" rows="3" maxlength="280" placeholder="Indiquez les éléments factuels prioritaires…"></textarea>
+        </div>
+        <div class="row row--end mt-xs">
+          <button class="btn btn--soft btn--sm" type="button" data-close-modal>Annuler</button>
+          <button class="btn btn--error" type="submit"><span class="ms ms--16">send</span>Déclencher l'alerte</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+</body>
+</html>

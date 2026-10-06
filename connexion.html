@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connexion à l'espace membre — CRGA Grand Amiénois</title>
+  <meta name="description" content="Connexion à l'espace membre du Collectif des Repreneurs du Grand Amiénois.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body class="blank-page" data-page="connexion" data-layout="blank">
+<main class="blank-main">
+  <div class="container container--md" style="padding:0">
+    <a class="back-home" href="index.html"><span class="ms ms--16">arrow_back</span>Retour au site</a>
+
+    <div class="grid grid-lg-12 grid--lg" style="align-items:stretch">
+
+      <!-- Panneau marque -->
+      <aside class="span-5 card card--navy card--pad-lg card--shadow-xl card--fill">
+        <div class="glow glow--cyan" style="width:16rem;height:16rem;top:-4rem;right:-4rem"></div>
+        <div class="glow" style="width:12rem;height:12rem;bottom:-3rem;left:-3rem;background:rgba(117,209,254,.1);filter:blur(40px)"></div>
+
+        <div class="stack-lg z1">
+          <span class="pill pill--glass pill--lg" style="align-self:flex-start"><span class="dot dot--cyan pulse"></span>Espace réservé aux membres</span>
+          <div>
+            <span class="label-md upper" style="color:var(--secondary-fixed);letter-spacing:.1em">Collectif des Repreneurs · Grand Amiénois</span>
+            <h1 class="t-h1 mt-xs">Portail membre CRGA</h1>
+            <p class="mt-sm" style="color:var(--primary-fixed-dim)">Le point d'accès des repreneurs, cédants et experts du collectif aux opportunités et à l'accompagnement.</p>
+          </div>
+
+          <div class="media media--h36 img-mono">
+            <img alt="Rosace et galerie des rois de la cathédrale Notre-Dame d'Amiens" src="cathedrale.jpg">
+            <div class="media__overlay">
+              <span class="row label-md"><span class="ms ms--fill ms--18 c-cyan">verified_user</span>Accès réservé aux adhérents validés</span>
+            </div>
+          </div>
+
+          <div class="stack-md">
+            <div class="row row--top card card--pad-md" style="background:rgba(0,43,102,.6);box-shadow:none;padding:.75rem">
+              <span class="icon-box icon-box--sm icon-box--navy"><span class="ms ms--16">lock</span></span>
+              <div>
+                <h2 class="label-lg">Échanges protégés</h2>
+                <p class="t-sm" style="color:var(--primary-fixed-dim)">Dossiers de reprise et signalements accessibles aux seuls membres habilités.</p>
+              </div>
+            </div>
+            <div class="row row--top card card--pad-md" style="background:rgba(0,43,102,.6);box-shadow:none;padding:.75rem">
+              <span class="icon-box icon-box--sm icon-box--navy"><span class="ms ms--16">gavel</span></span>
+              <div>
+                <h2 class="label-lg">Secret des affaires</h2>
+                <p class="t-sm" style="color:var(--primary-fixed-dim)">Charte déontologique engageant l'ensemble des dirigeants et repreneurs du bassin.</p>
+              </div>
+            </div>
+            <div class="row row--top card card--pad-md" style="background:rgba(0,43,102,.6);box-shadow:none;padding:.75rem">
+              <span class="icon-box icon-box--sm icon-box--navy" style="color:var(--amber)"><span class="ms ms--16">support_agent</span></span>
+              <div>
+                <h2 class="label-lg">Cellule d'écoute SOS dirigeants</h2>
+                <p class="t-sm" style="color:var(--primary-fixed-dim)">Assistance confidentielle pour les chefs d'entreprise en transmission.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row--between row--wrap z1 mt-lg">
+          <span class="row t-sm" style="color:var(--primary-fixed-dim)"><span class="ms ms--14 c-cyan">hub</span>CRGA · Grand Amiénois</span>
+          <a class="pill pill--navy c-vivid" href="fiche-15.html">Fiche 15</a>
+        </div>
+      </aside>
+
+      <!-- Formulaire -->
+      <section class="span-7 card card--pad-lg card--shadow-xl card--fill" aria-labelledby="login-title">
+        <div>
+          <div class="stack-xs mb-lg">
+            <span class="eyebrow c-secondary">Authentification</span>
+            <h2 class="t-h1 c-navy" id="login-title">Connexion à votre espace membre</h2>
+            <p class="c-muted">Accédez aux dossiers d'opportunités, à l'annuaire des pairs et au suivi Fiche 15.</p>
+          </div>
+
+          <div class="segmented mb-lg" role="tablist" data-tabs id="login-tabs">
+            <button type="button" role="tab" aria-selected="true" class="is-active" data-tab="password">Email &amp; mot de passe</button>
+            <button type="button" role="tab" aria-selected="false" data-tab="sos">Code temporaire SOS</button>
+          </div>
+
+          <form class="form" style="gap:1rem" id="auth-form" data-form data-toast="Connexion réussie — redirection vers votre espace…" data-redirect="espace-membre.html">
+            <div class="field" style="gap:.375rem">
+              <label class="field__label-row" for="email-field">
+                <span class="field__label" id="email-label">Adresse email professionnelle</span>
+                <span class="t-sm c-muted" id="email-hint">Format @entreprise.fr</span>
+              </label>
+              <div class="input-wrap">
+                <span class="ms" id="email-icon">mail</span>
+                <input class="input" id="email-field" type="email" placeholder="directeur@groupe-amiens.fr" autocomplete="username" required>
+              </div>
+            </div>
+
+            <div class="field" style="gap:.375rem" id="password-group">
+              <div class="field__label-row">
+                <label class="field__label" for="password-field">Mot de passe</label>
+                <a class="link" href="#">Mot de passe oublié ?</a>
+              </div>
+              <div class="input-wrap input-wrap--btn">
+                <span class="ms">key</span>
+                <input class="input" id="password-field" type="password" placeholder="••••••••••••" autocomplete="current-password" required>
+                <button class="input-wrap__btn" type="button" data-toggle-password="password-field" aria-label="Afficher le mot de passe"><span class="ms ms--18">visibility</span></button>
+              </div>
+            </div>
+
+            <div class="row row--between row--wrap">
+              <label class="check" style="align-items:center"><input type="checkbox" checked style="margin-top:0"><span>Se souvenir de moi sur ce poste</span></label>
+              <span class="row t-sm c-muted"><span class="ms ms--14 c-secondary">verified</span>Session 8 h</span>
+            </div>
+
+            <button class="btn btn--cyan btn--block btn--lg mt-xs" type="submit">Se connecter à l'espace membre<span class="ms ms--18">arrow_forward</span></button>
+          </form>
+
+          <div class="or-sep"><span>ou</span></div>
+
+          <button class="btn btn--navy-surface btn--block" type="button" onclick="CRGA.toast('Connexion ProConnect : à brancher sur le service d\'authentification.', 'info')">
+            <span class="pill pill--sq" style="background:#fff;color:var(--navy-deep);padding:.125rem .375rem">PRO</span>
+            Connexion via ProConnect
+            <span class="ms ms--16 c-cyan" style="margin-left:auto">lock_open</span>
+          </button>
+        </div>
+
+        <div class="stack-md mt-lg">
+          <div class="card card--ice card--pad-md row row--between row--wrap">
+            <div class="row row--md">
+              <span class="icon-box icon-box--white"><span class="ms">group_add</span></span>
+              <div>
+                <p class="label-md bold c-navy">Pas encore adhérent ?</p>
+                <p class="t-sm c-muted">Rejoignez les repreneurs et cédants qualifiés du territoire.</p>
+              </div>
+            </div>
+            <a class="link" href="adhesion.html">Adhérer au Collectif <span class="ms ms--18">chevron_right</span></a>
+          </div>
+          <div class="row row--between row--wrap t-sm c-muted">
+            <span class="row"><span class="dot dot--cyan ping"></span><span class="bold c-navy">Dispositif opérationnel</span><span class="c-outline">•</span>Permanence Somme active</span>
+            <a class="row bold c-navy" href="tel:+33322001515"><span class="ms ms--16 c-secondary">phone_in_talk</span>03 22 00 15 15</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script>
+  // Bascule entre connexion classique et code temporaire SOS
+  document.addEventListener('DOMContentLoaded', function () {
+    var tabs = document.getElementById('login-tabs');
+    var pwdGroup = document.getElementById('password-group');
+    var pwd = document.getElementById('password-field');
+    var email = document.getElementById('email-field');
+    var label = document.getElementById('email-label');
+    var hint = document.getElementById('email-hint');
+    var icon = document.getElementById('email-icon');
+    tabs.addEventListener('tabchange', function (e) {
+      var sos = e.detail === 'sos';
+      pwdGroup.classList.toggle('hidden', sos);
+      pwd.required = !sos;
+      email.type = sos ? 'text' : 'email';
+      email.value = '';
+      email.placeholder = sos ? 'Code SOS à 8 chiffres (ex : 884-219-00)' : 'directeur@groupe-amiens.fr';
+      email.autocomplete = sos ? 'one-time-code' : 'username';
+      label.textContent = sos ? 'Code temporaire SOS' : 'Adresse email professionnelle';
+      hint.textContent = sos ? 'Reçu par SMS' : 'Format @entreprise.fr';
+      icon.textContent = sos ? 'emergency' : 'mail';
+    });
+  });
+</script>
+</body>
+</html>
